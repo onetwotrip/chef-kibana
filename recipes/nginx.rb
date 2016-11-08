@@ -20,7 +20,7 @@
 node.set['nginx']['default_site_enabled'] = node['kibana']['nginx']['enable_default_site']
 node.set['nginx']['install_method'] = node['kibana']['nginx']['install_method']
 
-include_recipe 'nginx'
+include_recipe 'chef_nginx'
 
 template "#{node['nginx']['dir']}/sites-available/kibana" do
   source node['kibana']['nginx']['template']

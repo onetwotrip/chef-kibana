@@ -5,7 +5,7 @@ source 'https://api.berkshelf.com' if Gem::Version.new(Berkshelf::VERSION) > Gem
 metadata
 cookbook 'yum'
 cookbook 'apt'
-cookbook 'nginx'
+cookbook 'chef_nginx'
 cookbook 'apache2'
 cookbook 'git'
 cookbook 'java'
